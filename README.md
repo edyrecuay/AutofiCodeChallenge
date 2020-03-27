@@ -15,9 +15,9 @@ I'm parting from the point that I need to store in a database that should be que
 The way the code is orgnized is in an MVC: the View module is defined in \routes\routes.js which also is responsible to receive the CSV file, to upload the file I was primary using express-fileupload but it wasn't creating a middleware to ensure we have the file uploaded before to insert into database, for that reason I decided to change to multer library. The Controller is defined in controllers\carController.js which uses csvToJson library and the model defined in models\BECar (BE for business entity). The Model is a schema using mongoose where I set some attributes to the fields such as unique and required to ensure to not upload duplicate rows.
 
 ## Multiple Providers
-To handle multipe providers with different configuration options, I'm taking advantage of the atributes that cvsToJson library enables: includeColumns and ignoreColumns, You can define throught a regular expression which fields should be included or ignored if we leave ignoreColumns as empty it assumes that there is no column to ignore.
+To handle multipe providers with different configuration options in the file **config.json**, I'm taking advantage of the atributes that cvsToJson library enables: includeColumns and ignoreColumns, You can define throught a regular expression which fields should be included or ignored if we leave ignoreColumns as empty it assumes that there is no column to ignore.
 
-Example:
+Example of **config.json**:
 ```json
 { 
     "GM": { 
