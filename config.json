@@ -1,0 +1,10 @@
+{ 
+    "GM": { 
+        "includeColumns":"UUID|VIN|Make|Model|Mileage|Year|Price|ZipCode|CreateDate|UpdateDate",
+        "ignoreColumns":""
+    },
+    "Toyota": { 
+        "includeColumns":"UUID|VIN|Make|Model|Mileage|Year",
+        "ignoreColumns":"Price|ZipCode|CreateDate|UpdateDate"
+    }
+}
