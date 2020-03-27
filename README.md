@@ -18,6 +18,7 @@ The way the code is orgnized is in an MVC: the View module is defined in \routes
 To handle multipe providers with different configuration options, I'm taking advantage of the atributes that cvsToJson library enables: includeColumns and ignoreColumns, You can define throught a regular expression which fields should be included or ignored if we leave ignoreColumns as empty it assumes that there is no column to ignore.
 
 Example:
+```json
 { 
     "GM": { 
         "includeColumns":"UUID|VIN|Make|Model|Mileage|Year|Price|ZipCode|CreateDate|UpdateDate",
@@ -28,6 +29,7 @@ Example:
         "ignoreColumns":"Price|ZipCode|CreateDate|UpdateDate"
     }
 }
+```
 
 To post a file, we do a POST to the endpoint and pass two parameters in body:
 - file: the CSV file to be uploaded
