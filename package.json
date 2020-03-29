@@ -1,0 +1,22 @@
+{
+  "name": "autoficodechallenge",
+  "version": "1.0.0",
+  "description": "> In this code challenge I'm providing a solution to upload a CSV file in a NO SQL database in this case Mongo DB (in memory editon).",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "csvtojson": "^2.0.10",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.6",
+    "mongodb-memory-server": "^6.4.1",
+    "mongoose": "^5.9.5",
+    "multer": "^1.4.2",
+    "read-config": "^2.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
